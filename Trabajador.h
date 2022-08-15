@@ -14,6 +14,7 @@ private:
     string nombre;
     string fechaNacimiento;
     double salario;
+
 public:
     Trabajador(const string &id, const string &primerApellido, const string &segundoApellido, const string &nombre,
                const string &fechaNacimiento, double salario);
@@ -50,6 +51,18 @@ public:
     bool apellidoMayor(Trabajador*);
 
     Trabajador& operator =(Trabajador a);
+
+    double deducciones();
+
+    double salarioNeto();
+
+    bool netoMayorAlPromedio(double);
+
+    string toStringFormatoReporte();
+
+    int tamNombre();
+
+    string formateaApellidosA19();
 };
 
 

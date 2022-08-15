@@ -32,6 +32,27 @@ isEmpty() {
 }
 
 template<class tipo>
+int ListaGenerica<tipo>::cuentaNodos(){
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    int cantNodos = 0 ;
+    while(it->Actual() != nullptr){
+        cantNodos ++;
+        it->Mover();
+    }
+return cantNodos;
+}
+template<class tipo>
+tipo* ListaGenerica<tipo>::devuelvePorId(string idEntrada){
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    while (it->Actual()!= nullptr){
+        if(it->Actual()->getTipo()->getId() == idEntrada)
+            return it->Actual()->getTipo();
+        it->Mover();
+    }
+    return nullptr;
+}
+
+template<class tipo>
 bool
 ListaGenerica<tipo>::
 ingresaObj(tipo* obj){
@@ -71,23 +92,6 @@ IteradorLista<NodoGenerico<tipo>>*ListaGenerica<tipo>::getIterador()
 }
 
 
-//tra
-/*template<class tipo>
-void ListaGenerica<tipo>::ordenaPorIdAscendiente(){
-    IteradorLista<NodoGenerico<Trabajador>>* it1 = this->getIterador();
-    IteradorLista<NodoGenerico<Trabajador>>* it2 = this->getIterador();
-    //bubble sort
-    Trabajador* bubble;
-    while(it1->Actual() != nullptr) {
-        while (it2->Actual() != nullptr) {
-            if (it2->Actual()->getTipo()->idMayor(it2->Actual()->getSig()->getTipo())){
-                bubble = it2->Actual()->getTipo();
-                it1->
-            }
-        }
-        it2->Mover();
-    }
-}*/
 template<class tipo>
 void ListaGenerica<tipo>::ordenaPorPrimerApellidoAscendente(){
     IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
@@ -104,15 +108,91 @@ void ListaGenerica<tipo>::ordenaPorPrimerApellidoAscendente(){
                 actual->setTipo(bubble);
 
             }
-            actual = actual ->getSig();
+            actual = actual ->getSig();                                     //j++
         }
-        pivote = pivote->getSig();
+        pivote = pivote->getSig();                                          //i++
     }
+}
+
+template <class tipo>
+double ListaGenerica<tipo>::promedioSalariosNetos(){
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    //aux
+    double sumatoriaNetos = 0;
+    double promedioNetos = 0;
+    while(it->Actual() != nullptr){
+        sumatoriaNetos +=it->Actual()->getTipo()->salarioNeto();
+        it->Mover();
+    }
+    promedioNetos=(double) sumatoriaNetos/this->cuentaNodos();
+    return promedioNetos;
+}
+template<class tipo>
+string ListaGenerica<tipo>::lineaDivisora(){
+    stringstream s;
+    //header
+    s<<"+";
+    int cuentaCaracteres=11;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres=27;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 18;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 16;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 16;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 18;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 3;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+"<<endl;
+
+    return s.str();
 }
 
 template<class tipo>
 string ListaGenerica<tipo>::reporte() {
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
     stringstream s;
     //header
-
+s<<this->lineaDivisora();
+//fila que indica datos
+s<<"|"<<'\t'<<"Id"<<' '<<' '<<"|"<<' '<<"Apellidos"<<'\t'<<'\t'<<'\t'<<"|"<<" "<<"Nombre"<<'\t'<<"   "<<"|"
+<<'\t'<<"Sal. bruto"<<"  "<<'|'<<'\t'<<"Deducciones"<<"  "<<'|'<<'\t'<<"   "<<"Sal. neto"<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
+    s<<this->lineaDivisora();
+    //data
+    while (it->Actual()!= nullptr){
+        s<<it->Actual()->getTipo()->toStringFormatoReporte();
+        it->Mover();
+    }
+    s<<lineaDivisora();
+return s.str();
 }

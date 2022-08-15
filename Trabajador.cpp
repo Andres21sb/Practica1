@@ -109,3 +109,54 @@ bool Trabajador::apellidoMayor(Trabajador *trabajadorEntrada) {
     }
 return false;
 }
+
+double Trabajador::deducciones(){
+    double deducciones;
+    if(this->salario<950000){
+        deducciones = this->salario * 0.09;
+        return deducciones;
+    }else{
+        deducciones = this->salario * 0.09 + ((this->salario - 950000)*0.05);
+        return deducciones;
+    }
+}
+
+double Trabajador::salarioNeto(){
+    double netoSalida;
+    netoSalida = this->salario - this->deducciones();
+    return netoSalida;
+}
+
+bool Trabajador::netoMayorAlPromedio(double promedio){
+    if(this->salarioNeto()>promedio)
+        return true;
+    else
+        return false;
+}
+
+string Trabajador::toStringFormatoReporte(){
+    stringstream s;
+    s<<"|"<<' '<<id<<' '<<'|'<<' '<<this->formateaApellidosA19()<<' '<<'\t'<<'\t'<<'|'<<' '<<nombre
+    <<'\t'<<'|'<<'\t'<<salario<<'\t'<<"    "<<'|'<<'\t'<<deducciones()<<'\t'<<"     "<<'|'<<'\t'<<"   "<<salarioNeto()<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
+    return s.str();
+}
+
+int Trabajador::tamNombre(){
+    int tam = nombre.size();
+    return tam;
+}
+
+string Trabajador::formateaApellidosA19(){
+    int faltante;
+    stringstream s;
+    s<<primerApellido<<' '<<segundoApellido;
+    int tamNombre = primerApellido.size()+segundoApellido.size()+1;
+    if(tamNombre<19){
+        faltante = 19 - tamNombre;
+        while(faltante !=0){
+            s<<' ';
+            faltante--;
+        }
+    }
+    return s.str();
+}

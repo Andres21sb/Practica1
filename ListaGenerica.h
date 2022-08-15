@@ -28,6 +28,10 @@ public:
 
     string toString();
 
+    int cuentaNodos();
+
+    tipo* devuelvePorId(string);
+
     //---------- Iterador ----------
     IteradorLista<NodoGenerico<tipo>> *getIterador();
 
@@ -35,7 +39,12 @@ public:
 
     void ordenaPorPrimerApellidoAscendente();
 
+    string lineaDivisora();
+
     string reporte();
+
+    double promedioSalariosNetos();
+
 
 };
 
