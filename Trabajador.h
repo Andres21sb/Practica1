@@ -63,6 +63,9 @@ public:
     int tamNombre();
 
     string formateaApellidosA19();
+    string formateaNombreA14();
+    string formateaCifras(double);
+    string formateaCifras(int);
 };
 
 

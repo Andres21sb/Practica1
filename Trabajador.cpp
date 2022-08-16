@@ -136,8 +136,9 @@ bool Trabajador::netoMayorAlPromedio(double promedio){
 
 string Trabajador::toStringFormatoReporte(){
     stringstream s;
-    s<<"|"<<' '<<id<<' '<<'|'<<' '<<this->formateaApellidosA19()<<' '<<'\t'<<'\t'<<'|'<<' '<<nombre
-    <<'\t'<<'|'<<'\t'<<salario<<'\t'<<"    "<<'|'<<'\t'<<deducciones()<<'\t'<<"     "<<'|'<<'\t'<<"   "<<salarioNeto()<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
+    s<<"|"<<' '<<id<<' '<<'|'<<' '<<this->formateaApellidosA19()<<' '<<'\t'<<'|'<<' '<<formateaNombreA14()
+    <<' '<<'|'<<'\t'<<formateaCifras(salario)<<'\t'<<"    "<<'|'<<'\t'<<formateaCifras(deducciones())<<'\t'<<"     "<<'|'
+    <<'\t'<<"   "<<formateaCifras(salarioNeto())<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
     return s.str();
 }
 
@@ -158,5 +159,127 @@ string Trabajador::formateaApellidosA19(){
             faltante--;
         }
     }
+    return s.str();
+}
+
+string Trabajador::formateaNombreA14(){
+    int faltante;
+    stringstream s;
+    s<<nombre;
+    int tamNombre = nombre.size();
+    if(tamNombre<14){
+        faltante = 14 - tamNombre;
+        while(faltante !=0){
+            s<<' ';
+            faltante--;
+        }
+    }
+    return s.str();
+}
+
+string Trabajador::formateaCifras(double numEntrada){
+    stringstream  s;
+    if(numEntrada>=1000000) {
+        int unidadesMillon = (int) numEntrada / 1000000;
+        int centenasMillar = (int) (numEntrada - (unidadesMillon * 1000000)) / 1000;
+        int centenas = (int) ((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000);
+        int decimales = (int) (((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000)-centenas)*100;
+        if(centenas == 0){
+            if(decimales == 0){
+                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<"00";
+            } else{
+                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<decimales;
+
+            }
+        }else{
+            s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<decimales;
+        }
+    }else{
+        if(numEntrada>=1000){
+            int centenasMillar = (int) numEntrada/1000;
+            int centenas = (int) (numEntrada - centenasMillar * 1000);
+            int decimales = (int) ((numEntrada - centenasMillar * 1000)-centenas)*100;
+            if(centenas == 0){
+                if(decimales == 0){
+                    s<<centenasMillar<<','<<"000"<<'.'<<"00";
+                } else{
+                    s<<centenasMillar<<','<<"000"<<'.'<<decimales;
+
+                }
+            }else{
+                s<<centenasMillar<<','<<centenas<<'.'<<decimales;
+            }
+        }
+        else{
+            if(numEntrada>100){
+                int centenas = (int) numEntrada;
+                int decimales = (int) (numEntrada -centenas)*100;
+                if(centenas == 0){
+                    if(decimales == 0){
+                        s<<"0"<<'.'<<"00";
+                    } else{
+                        s<<centenas<<'.'<<decimales;
+
+                    }
+                }else{
+                    s<<centenas<<'.'<<decimales;
+                }
+            }
+        }
+    }
+    return s.str();
+}
+
+string Trabajador::formateaCifras(int numEntrada){
+    stringstream  s;
+    if(numEntrada>=1000000) {
+        int unidadesMillon = (int) numEntrada / 1000000;
+        int centenasMillar = (int) (numEntrada - (unidadesMillon * 1000000)) / 1000;
+        int centenas = (int) ((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000);
+        int decimales = (int) (((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000)-centenas)*100;
+        if(centenas == 0){
+            if(decimales == 0){
+                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<"00";
+            } else{
+                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<decimales;
+
+            }
+        }else{
+            s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<decimales;
+        }
+    }else{
+        if(numEntrada>=1000){
+            int centenasMillar = (int) numEntrada/1000;
+            int centenas = (int) (numEntrada - centenasMillar * 1000);
+            int decimales = (int) ((numEntrada - centenasMillar * 1000)-centenas)*100;
+            if(centenas == 0){
+                if(decimales == 0){
+                    s<<centenasMillar<<','<<"000"<<'.'<<"00";
+                } else{
+                    s<<centenasMillar<<','<<"000"<<'.'<<decimales;
+
+                }
+            }else{
+                s<<centenasMillar<<','<<centenas<<'.'<<decimales;
+            }
+        }
+        else{
+            if(numEntrada>100){
+                int centenas = (int) numEntrada;
+                int decimales = (int) (numEntrada -centenas)*100;
+                if(centenas == 0){
+                    if(decimales == 0){
+                        s<<"0"<<'.'<<"00";
+                    } else{
+                        s<<centenas<<'.'<<decimales;
+
+                    }
+                }else{
+                    s<<centenas<<'.'<<decimales;
+                }
+            }
+        }
+    }
+
     return s.str();
 }
