@@ -39,11 +39,25 @@ public:
 
     void ordenaPorPrimerApellidoAscendente();
 
+    string minimoDeLosSalariosBrutos();
+    string minimoDeLosSalariosNetos();
+    string minimoDeducciones();
+
+    string maximoDeLosSalariosBrutos();
+    string maximoDeLosSalariosNetos();
+    string maximoDeducciones();
+
+    string creaLinea(int);
     string lineaDivisora();
+
+    string sangria(int);
 
     string reporte();
 
     double promedioSalariosNetos();
+    string promedioSalariosNetosString();
+    string promedioSalariosBrutos();
+    string promedioDeducciones();
 
 
 };

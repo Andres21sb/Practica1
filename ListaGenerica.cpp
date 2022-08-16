@@ -115,6 +115,156 @@ void ListaGenerica<tipo>::ordenaPorPrimerApellidoAscendente(){
 }
 
 template <class tipo>
+string ListaGenerica<tipo>::minimoDeLosSalariosBrutos() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->getSalario()>actual->getTipo()->getSalario()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->getSalario();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::minimoDeLosSalariosNetos() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->salarioNeto() >actual->getTipo()->salarioNeto()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->salarioNeto();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::minimoDeducciones() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->deducciones()>actual->getTipo()->deducciones()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->deducciones();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::maximoDeLosSalariosBrutos() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->getSalario()<actual->getTipo()->getSalario()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->getSalario();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::maximoDeLosSalariosNetos() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->salarioNeto() <actual->getTipo()->salarioNeto()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->salarioNeto();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::maximoDeducciones() {
+    ListaGenerica<tipo>* l2 = this;
+    IteradorLista<NodoGenerico<Trabajador>>* it= l2->getIterador();
+    NodoGenerico<Trabajador>* pivote = nullptr, * actual = nullptr;
+    //bubble sort
+    Trabajador* bubble;
+    pivote = it->Inicio();
+    while(pivote != it->Final()){
+        actual = pivote->getSig();
+        while(actual != nullptr){
+            if(pivote->getTipo()->deducciones()<actual->getTipo()->deducciones()){
+                bubble = pivote->getTipo();
+                pivote->setTipo(actual->getTipo());
+                actual->setTipo(bubble);
+
+            }
+            actual = actual ->getSig();                                     //j++
+        }
+        pivote = pivote->getSig();                                          //i++
+    }
+    double cantSalida = it->Inicio()->getTipo()->deducciones();
+    return it->Inicio()->getTipo()->formateaCifras(cantSalida);
+}
+
+template <class tipo>
 double ListaGenerica<tipo>::promedioSalariosNetos(){
     IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
     //aux
@@ -127,6 +277,58 @@ double ListaGenerica<tipo>::promedioSalariosNetos(){
     promedioNetos=(double) sumatoriaNetos/this->cuentaNodos();
     return promedioNetos;
 }
+
+template <class tipo>
+string ListaGenerica<tipo>::promedioSalariosBrutos(){
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    //aux
+    double sumatoria = 0;
+    double promedio = 0;
+    while(it->Actual() != nullptr){
+        sumatoria +=it->Actual()->getTipo()->getSalario();
+        it->Mover();
+    }
+    promedio=(double) sumatoria/this->cuentaNodos();
+    return it->Inicio()->getTipo()->formateaCifras(promedio);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::promedioDeducciones() {
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    //aux
+    double sumatoria = 0;
+    double promedio = 0;
+    while(it->Actual() != nullptr){
+        sumatoria +=it->Actual()->getTipo()->deducciones();
+        it->Mover();
+    }
+    promedio=(double) sumatoria/this->cuentaNodos();
+    return it->Inicio()->getTipo()->formateaCifras(promedio);
+}
+
+template <class tipo>
+string ListaGenerica<tipo>::promedioSalariosNetosString()  {
+    IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
+    //aux
+    double sumatoria = 0;
+    double promedio = 0;
+    while(it->Actual() != nullptr){
+        sumatoria +=it->Actual()->getTipo()->salarioNeto();
+        it->Mover();
+    }
+    promedio=(double) sumatoria/this->cuentaNodos();
+    return it->Inicio()->getTipo()->formateaCifras(promedio);
+}
+template<class tipo>
+string ListaGenerica<tipo>::creaLinea(int tam){
+    stringstream s;
+    while(tam!=0){
+        s<<"-";
+        tam--;
+    }
+    return s.str();
+}
+
 template<class tipo>
 string ListaGenerica<tipo>::lineaDivisora(){
     stringstream s;
@@ -138,13 +340,7 @@ string ListaGenerica<tipo>::lineaDivisora(){
         cuentaCaracteres--;
     }
     s<<"+";
-    cuentaCaracteres=27;
-    while(cuentaCaracteres!=0){
-        s<<"-";
-        cuentaCaracteres--;
-    }
-    s<<"+";
-    cuentaCaracteres = 18;
+    cuentaCaracteres=22;
     while(cuentaCaracteres!=0){
         s<<"-";
         cuentaCaracteres--;
@@ -156,13 +352,19 @@ string ListaGenerica<tipo>::lineaDivisora(){
         cuentaCaracteres--;
     }
     s<<"+";
-    cuentaCaracteres = 16;
+    cuentaCaracteres = 19;
     while(cuentaCaracteres!=0){
         s<<"-";
         cuentaCaracteres--;
     }
     s<<"+";
-    cuentaCaracteres = 18;
+    cuentaCaracteres = 15;
+    while(cuentaCaracteres!=0){
+        s<<"-";
+        cuentaCaracteres--;
+    }
+    s<<"+";
+    cuentaCaracteres = 15;
     while(cuentaCaracteres!=0){
         s<<"-";
         cuentaCaracteres--;
@@ -179,20 +381,44 @@ string ListaGenerica<tipo>::lineaDivisora(){
 }
 
 template<class tipo>
+string ListaGenerica<tipo>::sangria(int tam){
+    stringstream s;
+    while (tam>0){
+        s<<' ';
+        tam--;
+    }
+    return s.str();
+}
+
+template<class tipo>
 string ListaGenerica<tipo>::reporte() {
     IteradorLista<NodoGenerico<Trabajador>>* it = this->getIterador();
     stringstream s;
     //header
 s<<this->lineaDivisora();
 //fila que indica datos
-s<<"|"<<'\t'<<"Id"<<' '<<' '<<"|"<<' '<<"Apellidos"<<'\t'<<'\t'<<'\t'<<"|"<<" "<<"Nombre"<<'\t'<<"   "<<"|"
-<<'\t'<<"Sal. bruto"<<"  "<<'|'<<'\t'<<"Deducciones"<<"  "<<'|'<<'\t'<<"   "<<"Sal. neto"<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
+s<<"|"<<'\t'<<"Id"<<' '<<' '<<"|"<<' '<<"Apellidos"<<'\t'<<'\t'<<"   "<<"|"<<" "<<"Nombre"<<'\t'<<"    "<<"|"
+<<'\t'<<"Sal. bruto"<<'\t'<<'|'<<' '<<"Deducciones"<<'\t'<<'|'<<' '<<"Sal. neto"<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
     s<<this->lineaDivisora();
     //data
     while (it->Actual()!= nullptr){
-        s<<it->Actual()->getTipo()->toStringFormatoReporte();
+        s<<it->Actual()->getTipo()->toStringFormatoReporte()<<" "<<it->Actual()->getTipo()->netoMenorOIgualAlPromedio(promedioSalariosNetos())<<' '<<'|'<<endl;;
         it->Mover();
     }
     s<<lineaDivisora();
+    //footer
+    s<<sangria(52);
+    s<<'|'<<'\t'<<minimoDeLosSalariosBrutos()<<'\t'<<'|'<<' '<<minimoDeducciones()<<'\t'<<'|'
+    <<' '<<minimoDeLosSalariosNetos()<<'\t'<<'|'<<endl;
+    s<<sangria(52);
+    s<<'|'<<'\t'<<promedioSalariosBrutos()<<'\t'<<'|'<<' '<<promedioDeducciones()<<'\t'<<'|'
+     <<' '<<promedioSalariosNetosString()<<'\t'<<'|'<<endl;
+    s<<sangria(52);
+    s<<'|'<<'\t'<<maximoDeLosSalariosBrutos()<<'\t'<<'|'<<' '<<maximoDeducciones()<<'\t'<<'|'
+     <<' '<<maximoDeLosSalariosNetos()<<'\t'<<'|'<<endl;
+
+    //linea final
+    s<<sangria(52);
+
 return s.str();
 }

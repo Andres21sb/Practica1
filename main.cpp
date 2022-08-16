@@ -15,10 +15,10 @@ int main() {
   cout<<"Reporte"<<endl;
   cout<<lista->reporte()<<endl;
   /*cout<<prueba->toStringFormatoReporte()<<endl;*/
-  prueba = lista->devuelvePorId("945148643");
+  prueba = lista->devuelvePorId("736847602");
   cout<<prueba->toString()<<endl;
   int tam;
-  tam = prueba->tamNombre();
+  tam = prueba->formateaApellidosA20().size();
   cout<<tam<<endl;
 
 

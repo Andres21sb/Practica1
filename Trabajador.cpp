@@ -110,6 +110,13 @@ bool Trabajador::apellidoMayor(Trabajador *trabajadorEntrada) {
 return false;
 }
 
+char Trabajador::netoMenorOIgualAlPromedio(double netoTotal){
+    if(salarioNeto()<=netoTotal)
+        return '*';
+    else
+        return' ';
+}
+
 double Trabajador::deducciones(){
     double deducciones;
     if(this->salario<950000){
@@ -136,9 +143,9 @@ bool Trabajador::netoMayorAlPromedio(double promedio){
 
 string Trabajador::toStringFormatoReporte(){
     stringstream s;
-    s<<"|"<<' '<<id<<' '<<'|'<<' '<<this->formateaApellidosA19()<<' '<<'\t'<<'|'<<' '<<formateaNombreA14()
-    <<' '<<'|'<<'\t'<<formateaCifras(salario)<<'\t'<<"    "<<'|'<<'\t'<<formateaCifras(deducciones())<<'\t'<<"     "<<'|'
-    <<'\t'<<"   "<<formateaCifras(salarioNeto())<<'\t'<<'|'<<" "<<"*"<<' '<<'|'<<endl;
+    s<<"|"<<' '<<id<<' '<<'|'<<' '<<this->formateaApellidosA20()<<' '<<'|'<<' '<<formateaNombreA14()
+    <<' '<<'|'<<'\t'<<formateaCifras(salario)<<'\t'<<'|'<<' '<<formateaCifras(deducciones())<<'\t'<<'|'
+    <<' '<<formateaCifras(salarioNeto())<<'\t'<<'|';
     return s.str();
 }
 
@@ -147,13 +154,13 @@ int Trabajador::tamNombre(){
     return tam;
 }
 
-string Trabajador::formateaApellidosA19(){
+string Trabajador::formateaApellidosA20(){
     int faltante;
     stringstream s;
     s<<primerApellido<<' '<<segundoApellido;
     int tamNombre = primerApellido.size()+segundoApellido.size()+1;
-    if(tamNombre<19){
-        faltante = 19 - tamNombre;
+    if(tamNombre<20){
+        faltante = 20 - tamNombre;
         while(faltante !=0){
             s<<' ';
             faltante--;

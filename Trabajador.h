@@ -56,13 +56,15 @@ public:
 
     double salarioNeto();
 
+    char netoMenorOIgualAlPromedio(double);
+
     bool netoMayorAlPromedio(double);
 
     string toStringFormatoReporte();
 
     int tamNombre();
 
-    string formateaApellidosA19();
+    string formateaApellidosA20();
     string formateaNombreA14();
     string formateaCifras(double);
     string formateaCifras(int);
