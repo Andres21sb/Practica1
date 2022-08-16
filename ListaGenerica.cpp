@@ -322,10 +322,12 @@ string ListaGenerica<tipo>::promedioSalariosNetosString()  {
 template<class tipo>
 string ListaGenerica<tipo>::creaLinea(int tam){
     stringstream s;
+    s<<'+';
     while(tam!=0){
         s<<"-";
         tam--;
     }
+
     return s.str();
 }
 
@@ -418,7 +420,7 @@ s<<"|"<<'\t'<<"Id"<<' '<<' '<<"|"<<' '<<"Apellidos"<<'\t'<<'\t'<<"   "<<"|"<<" "
      <<' '<<maximoDeLosSalariosNetos()<<'\t'<<'|'<<endl;
 
     //linea final
-    s<<sangria(52);
+    s<<sangria(52)<< creaLinea(19)<< creaLinea(15)<< creaLinea(15)<<'+';
 
 return s.str();
 }
