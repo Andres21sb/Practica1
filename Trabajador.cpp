@@ -190,7 +190,7 @@ string Trabajador::formateaCifras(double numEntrada){
         int unidadesMillon = (int) numEntrada / 1000000;
         int centenasMillar = (int) (numEntrada - (unidadesMillon * 1000000)) / 1000;
         int centenas = (int) ((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000);
-        int decimales = (int) (((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000)-centenas)*100;
+        int decimales = (((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000)-centenas)*100;
         if(centenas == 0){
             if(decimales == 0){
                 s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<"00";
@@ -199,13 +199,18 @@ string Trabajador::formateaCifras(double numEntrada){
 
             }
         }else{
-            s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<decimales;
+            if(decimales == 0){
+                s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<"00";
+            } else{
+                s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<decimales;
+
+            }
         }
     }else{
         if(numEntrada>=1000){
             int centenasMillar = (int) numEntrada/1000;
             int centenas = (int) (numEntrada - centenasMillar * 1000);
-            int decimales = (int) ((numEntrada - centenasMillar * 1000)-centenas)*100;
+            int decimales = ((numEntrada - centenasMillar * 1000)-centenas)*100;
             if(centenas == 0){
                 if(decimales == 0){
                     s<<centenasMillar<<','<<"000"<<'.'<<"00";
@@ -214,13 +219,18 @@ string Trabajador::formateaCifras(double numEntrada){
 
                 }
             }else{
-                s<<centenasMillar<<','<<centenas<<'.'<<decimales;
+                if(decimales == 0){
+                    s<<centenasMillar<<','<<centenas<<'.'<<"00";
+                } else{
+                    s<<centenasMillar<<','<<centenas<<'.'<<decimales;
+
+                }
             }
         }
         else{
             if(numEntrada>100){
                 int centenas = (int) numEntrada;
-                int decimales = (int) (numEntrada -centenas)*100;
+                int decimales =  (numEntrada -centenas)*100;
                 if(centenas == 0){
                     if(decimales == 0){
                         s<<"0"<<'.'<<"00";
@@ -229,8 +239,12 @@ string Trabajador::formateaCifras(double numEntrada){
 
                     }
                 }else{
-                    s<<centenas<<'.'<<decimales;
-                }
+                    if(decimales == 0){
+                        s<<"0"<<'.'<<"00";
+                    } else{
+                        s<<centenas<<'.'<<decimales;
+
+                    }                }
             }
         }
     }
