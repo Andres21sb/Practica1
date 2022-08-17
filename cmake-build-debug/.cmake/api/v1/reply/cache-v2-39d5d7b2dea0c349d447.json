@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Serch/CLionProjects/Practica1/Practica1/cmake-build-debug"
+			"value" : "c:/Users/Darkh/OneDrive/Documentos/GitHub/Practica1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Serch/CLionProjects/Practica1/Practica1"
+			"value" : "C:/Users/Darkh/OneDrive/Documentos/GitHub/Practica1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Serch/CLionProjects/Practica1/Practica1/cmake-build-debug"
+			"value" : "C:/Users/Darkh/OneDrive/Documentos/GitHub/Practica1/cmake-build-debug"
 		},
 		{
 			"name" : "Practica1_IS_TOP_LEVEL",
@@ -1351,7 +1351,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Serch/CLionProjects/Practica1/Practica1"
+			"value" : "C:/Users/Darkh/OneDrive/Documentos/GitHub/Practica1"
 		}
 	],
 	"kind" : "cache",

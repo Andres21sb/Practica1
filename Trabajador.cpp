@@ -186,23 +186,28 @@ string Trabajador::formateaNombreA14(){
 
 string Trabajador::formateaCifras(double numEntrada){
     stringstream  s;
+    stringstream cmillar;
     if(numEntrada>=1000000) {
         int unidadesMillon = (int) numEntrada / 1000000;
         int centenasMillar = (int) (numEntrada - (unidadesMillon * 1000000)) / 1000;
+        if(centenasMillar<100)
+            cmillar<<"0"<<centenasMillar;
+        else
+            cmillar<<centenasMillar;
         int centenas = (int) ((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000);
         int decimales = (((numEntrada - (unidadesMillon * 1000000)) - centenasMillar * 1000)-centenas)*100;
         if(centenas == 0){
             if(decimales == 0){
-                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<"00";
+                s<<unidadesMillon<<','<<cmillar.str()<<','<<"000"<<'.'<<"00";
             } else{
-                s<<unidadesMillon<<','<<centenasMillar<<','<<"000"<<'.'<<decimales;
+                s<<unidadesMillon<<','<<cmillar.str()<<','<<"000"<<'.'<<decimales;
 
             }
         }else{
             if(decimales == 0){
-                s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<"00";
+                s<<unidadesMillon<<','<<cmillar.str()<<','<<centenas<<'.'<<"00";
             } else{
-                s<<unidadesMillon<<','<<centenasMillar<<','<<centenas<<'.'<<decimales;
+                s<<unidadesMillon<<','<<cmillar.str()<<','<<centenas<<'.'<<decimales;
 
             }
         }

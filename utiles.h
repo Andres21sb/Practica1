@@ -8,8 +8,10 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <cstdio>
+#include <windows.h>
 using namespace std;
 
-
+#pragma execution_character_set( "utf-8" )
 
 #endif //PRACTICA1_UTILES_H

@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Serch\CLionProjects\Practica1\Practica1
+CMAKE_SOURCE_DIR = C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Practica1.dir/depend.make
@@ -71,86 +71,86 @@ include CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/main.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Practica1.dir/main.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Practica1.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/main.cpp.obj -MF CMakeFiles\Practica1.dir\main.cpp.obj.d -o CMakeFiles\Practica1.dir\main.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Practica1.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/main.cpp.obj -MF CMakeFiles\Practica1.dir\main.cpp.obj.d -o CMakeFiles\Practica1.dir\main.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\main.cpp
 
 CMakeFiles/Practica1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\main.cpp > CMakeFiles\Practica1.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\main.cpp > CMakeFiles\Practica1.dir\main.cpp.i
 
 CMakeFiles/Practica1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\main.cpp -o CMakeFiles\Practica1.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\main.cpp -o CMakeFiles\Practica1.dir\main.cpp.s
 
 CMakeFiles/Practica1.dir/Trabajador.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/Trabajador.cpp.obj: ../Trabajador.cpp
 CMakeFiles/Practica1.dir/Trabajador.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Practica1.dir/Trabajador.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/Trabajador.cpp.obj -MF CMakeFiles\Practica1.dir\Trabajador.cpp.obj.d -o CMakeFiles\Practica1.dir\Trabajador.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\Trabajador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Practica1.dir/Trabajador.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/Trabajador.cpp.obj -MF CMakeFiles\Practica1.dir\Trabajador.cpp.obj.d -o CMakeFiles\Practica1.dir\Trabajador.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\Trabajador.cpp
 
 CMakeFiles/Practica1.dir/Trabajador.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/Trabajador.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\Trabajador.cpp > CMakeFiles\Practica1.dir\Trabajador.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\Trabajador.cpp > CMakeFiles\Practica1.dir\Trabajador.cpp.i
 
 CMakeFiles/Practica1.dir/Trabajador.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/Trabajador.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\Trabajador.cpp -o CMakeFiles\Practica1.dir\Trabajador.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\Trabajador.cpp -o CMakeFiles\Practica1.dir\Trabajador.cpp.s
 
 CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj: ../NodoGenerico.cpp
 CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj -MF CMakeFiles\Practica1.dir\NodoGenerico.cpp.obj.d -o CMakeFiles\Practica1.dir\NodoGenerico.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\NodoGenerico.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/NodoGenerico.cpp.obj -MF CMakeFiles\Practica1.dir\NodoGenerico.cpp.obj.d -o CMakeFiles\Practica1.dir\NodoGenerico.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\NodoGenerico.cpp
 
 CMakeFiles/Practica1.dir/NodoGenerico.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/NodoGenerico.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\NodoGenerico.cpp > CMakeFiles\Practica1.dir\NodoGenerico.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\NodoGenerico.cpp > CMakeFiles\Practica1.dir\NodoGenerico.cpp.i
 
 CMakeFiles/Practica1.dir/NodoGenerico.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/NodoGenerico.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\NodoGenerico.cpp -o CMakeFiles\Practica1.dir\NodoGenerico.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\NodoGenerico.cpp -o CMakeFiles\Practica1.dir\NodoGenerico.cpp.s
 
 CMakeFiles/Practica1.dir/IteradorLista.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/IteradorLista.cpp.obj: ../IteradorLista.cpp
 CMakeFiles/Practica1.dir/IteradorLista.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Practica1.dir/IteradorLista.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/IteradorLista.cpp.obj -MF CMakeFiles\Practica1.dir\IteradorLista.cpp.obj.d -o CMakeFiles\Practica1.dir\IteradorLista.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\IteradorLista.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Practica1.dir/IteradorLista.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/IteradorLista.cpp.obj -MF CMakeFiles\Practica1.dir\IteradorLista.cpp.obj.d -o CMakeFiles\Practica1.dir\IteradorLista.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\IteradorLista.cpp
 
 CMakeFiles/Practica1.dir/IteradorLista.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/IteradorLista.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\IteradorLista.cpp > CMakeFiles\Practica1.dir\IteradorLista.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\IteradorLista.cpp > CMakeFiles\Practica1.dir\IteradorLista.cpp.i
 
 CMakeFiles/Practica1.dir/IteradorLista.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/IteradorLista.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\IteradorLista.cpp -o CMakeFiles\Practica1.dir\IteradorLista.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\IteradorLista.cpp -o CMakeFiles\Practica1.dir\IteradorLista.cpp.s
 
 CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj: ../ListaGenerica.cpp
 CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj -MF CMakeFiles\Practica1.dir\ListaGenerica.cpp.obj.d -o CMakeFiles\Practica1.dir\ListaGenerica.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\ListaGenerica.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/ListaGenerica.cpp.obj -MF CMakeFiles\Practica1.dir\ListaGenerica.cpp.obj.d -o CMakeFiles\Practica1.dir\ListaGenerica.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\ListaGenerica.cpp
 
 CMakeFiles/Practica1.dir/ListaGenerica.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/ListaGenerica.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\ListaGenerica.cpp > CMakeFiles\Practica1.dir\ListaGenerica.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\ListaGenerica.cpp > CMakeFiles\Practica1.dir\ListaGenerica.cpp.i
 
 CMakeFiles/Practica1.dir/ListaGenerica.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/ListaGenerica.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\ListaGenerica.cpp -o CMakeFiles\Practica1.dir\ListaGenerica.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\ListaGenerica.cpp -o CMakeFiles\Practica1.dir\ListaGenerica.cpp.s
 
 CMakeFiles/Practica1.dir/FileManager.cpp.obj: CMakeFiles/Practica1.dir/flags.make
 CMakeFiles/Practica1.dir/FileManager.cpp.obj: ../FileManager.cpp
 CMakeFiles/Practica1.dir/FileManager.cpp.obj: CMakeFiles/Practica1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Practica1.dir/FileManager.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/FileManager.cpp.obj -MF CMakeFiles\Practica1.dir\FileManager.cpp.obj.d -o CMakeFiles\Practica1.dir\FileManager.cpp.obj -c C:\Users\Serch\CLionProjects\Practica1\Practica1\FileManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Practica1.dir/FileManager.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Practica1.dir/FileManager.cpp.obj -MF CMakeFiles\Practica1.dir\FileManager.cpp.obj.d -o CMakeFiles\Practica1.dir\FileManager.cpp.obj -c C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\FileManager.cpp
 
 CMakeFiles/Practica1.dir/FileManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Practica1.dir/FileManager.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Serch\CLionProjects\Practica1\Practica1\FileManager.cpp > CMakeFiles\Practica1.dir\FileManager.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\FileManager.cpp > CMakeFiles\Practica1.dir\FileManager.cpp.i
 
 CMakeFiles/Practica1.dir/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Practica1.dir/FileManager.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Serch\CLionProjects\Practica1\Practica1\FileManager.cpp -o CMakeFiles\Practica1.dir\FileManager.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\FileManager.cpp -o CMakeFiles\Practica1.dir\FileManager.cpp.s
 
 # Object files for target Practica1
 Practica1_OBJECTS = \
@@ -174,7 +174,7 @@ Practica1.exe: CMakeFiles/Practica1.dir/build.make
 Practica1.exe: CMakeFiles/Practica1.dir/linklibs.rsp
 Practica1.exe: CMakeFiles/Practica1.dir/objects1.rsp
 Practica1.exe: CMakeFiles/Practica1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Practica1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Practica1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Practica1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +186,6 @@ CMakeFiles/Practica1.dir/clean:
 .PHONY : CMakeFiles/Practica1.dir/clean
 
 CMakeFiles/Practica1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Serch\CLionProjects\Practica1\Practica1 C:\Users\Serch\CLionProjects\Practica1\Practica1 C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug C:\Users\Serch\CLionProjects\Practica1\Practica1\cmake-build-debug\CMakeFiles\Practica1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1 C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1 C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug C:\Users\Darkh\OneDrive\Documentos\GitHub\Practica1\cmake-build-debug\CMakeFiles\Practica1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Practica1.dir/depend
 
